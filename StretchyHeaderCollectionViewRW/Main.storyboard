@@ -33,22 +33,22 @@
         <scene sceneID="AJk-jG-hPa">
             <objects>
                 <collectionViewController id="jKa-7M-OOw" customClass="MasterViewController" customModule="StretchyHeaderCollectionViewRW" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="WOn-fO-4Sg">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="WOn-fO-4Sg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.53009440104166661" green="0.69548177083333329" blue="0.87050238715277772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EHd-fW-CIL" customClass="StretchyHeaderLayout" customModule="StretchyHeaderCollectionViewRW" customModuleProvider="target">
-                            <size key="itemSize" width="300" height="62"/>
+                            <size key="itemSize" width="320" height="480"/>
                             <size key="headerReferenceSize" width="50" height="180"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCell" id="iUb-XQ-IQw" customClass="CharactersCell" customModule="StretchyHeaderCollectionViewRW" customModuleProvider="target">
-                                <rect key="frame" x="37.5" y="180" width="300" height="62"/>
+                                <rect key="frame" x="27.5" y="180" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="62"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-5H-M8J">
@@ -59,13 +59,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-sd-gkc">
-                                            <rect key="frame" x="74" y="25" width="214" height="12"/>
+                                            <rect key="frame" x="74" y="25" width="234" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzQ-gW-8pe">
-                                            <rect key="frame" x="74" y="8" width="214" height="17"/>
+                                            <rect key="frame" x="74" y="8" width="234" height="17"/>
                                             <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -207,7 +207,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.93018740699404767" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="gTu-R1-SGn" firstAttribute="top" secondItem="mbO-Fx-nRQ" secondAttribute="bottom" constant="8" id="0A9-AS-bKT"/>
                                     <constraint firstAttribute="trailing" secondItem="WhE-6f-7U7" secondAttribute="trailing" id="3RB-ay-Lm1"/>
@@ -230,7 +230,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.67091137170000004" green="0.83144831659999996" blue="0.57968777419999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.53009440100000005" green="0.69548177079999995" blue="0.87050238719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="39j-uq-aUa" firstAttribute="centerX" secondItem="DZT-Am-Eul" secondAttribute="centerX" id="YsE-BB-Ouu"/>
                             <constraint firstItem="akt-wN-osX" firstAttribute="top" secondItem="myz-XU-5dp" secondAttribute="bottom" constant="24" id="lKH-da-NDn"/>
