@@ -12,4 +12,7 @@ import UIKit
 class CollectionHeaderView: UICollectionReusableView {
   @IBOutlet weak var backgroundImage: UIImageView! 
   @IBOutlet weak var foregroundImage: UIImageView!
+    
+    @IBOutlet weak var backgroundImageHeightConstraint:NSLayoutConstraint!
+    @IBOutlet weak var foregroundImageHeightConstraint:NSLayoutConstraint!
 }

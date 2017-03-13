@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12072"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -94,28 +95,32 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="KAX-yU-guv">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="KAX-yU-guv">
+                                    <rect key="frame" x="-113" y="-210" width="600" height="600"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="KAX-yU-guv" secondAttribute="height" multiplier="1:1" id="aRW-kF-Hu2"/>
+                                        <constraint firstAttribute="height" constant="600" id="rtK-vD-6Br"/>
+                                    </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-Lq-PBI">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-Lq-PBI">
                                     <rect key="frame" x="98" y="0.0" width="180" height="180"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="180" id="KEs-nC-E2a"/>
                                         <constraint firstAttribute="height" constant="180" id="SvE-3s-wn8"/>
+                                        <constraint firstAttribute="width" secondItem="nEj-Lq-PBI" secondAttribute="height" multiplier="1:1" id="htb-nn-2eC"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="nEj-Lq-PBI" firstAttribute="centerY" secondItem="8zz-fO-GLw" secondAttribute="centerY" id="Qx0-cG-GeG"/>
-                                <constraint firstAttribute="bottom" secondItem="KAX-yU-guv" secondAttribute="bottom" id="iAt-Ys-g82"/>
+                                <constraint firstItem="KAX-yU-guv" firstAttribute="centerX" secondItem="8zz-fO-GLw" secondAttribute="centerX" id="dSD-Ui-IkB"/>
+                                <constraint firstItem="KAX-yU-guv" firstAttribute="centerY" secondItem="8zz-fO-GLw" secondAttribute="centerY" id="dqR-vS-8k0"/>
                                 <constraint firstItem="nEj-Lq-PBI" firstAttribute="centerX" secondItem="8zz-fO-GLw" secondAttribute="centerX" id="kCv-yn-y4u"/>
-                                <constraint firstItem="KAX-yU-guv" firstAttribute="top" secondItem="8zz-fO-GLw" secondAttribute="top" id="q0M-sm-cfP"/>
-                                <constraint firstAttribute="trailing" secondItem="KAX-yU-guv" secondAttribute="trailing" id="q7F-tJ-ZfH"/>
-                                <constraint firstItem="KAX-yU-guv" firstAttribute="leading" secondItem="8zz-fO-GLw" secondAttribute="leading" id="y0p-Hq-W8s"/>
                             </constraints>
                             <connections>
                                 <outlet property="backgroundImage" destination="KAX-yU-guv" id="QpX-Me-rXZ"/>
+                                <outlet property="backgroundImageHeightConstraint" destination="rtK-vD-6Br" id="D3Q-IS-trT"/>
                                 <outlet property="foregroundImage" destination="nEj-Lq-PBI" id="vqs-yR-pif"/>
+                                <outlet property="foregroundImageHeightConstraint" destination="SvE-3s-wn8" id="idC-2y-LAw"/>
                             </connections>
                         </collectionReusableView>
                         <connections>
@@ -255,6 +260,6 @@
     </scenes>
     <resources>
         <image name="HeaderLogo" width="480" height="480"/>
-        <image name="backgroundImage.png" width="491" height="307"/>
+        <image name="backgroundImage" width="491" height="307"/>
     </resources>
 </document>
