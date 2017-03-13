@@ -37,19 +37,19 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="WOn-fO-4Sg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.53009440104166661" green="0.69548177083333329" blue="0.87050238715277772" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.75039062499999998" green="0.70036458329999995" blue="0.37519531249999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="EHd-fW-CIL" customClass="StretchyHeaderLayout" customModule="StretchyHeaderCollectionViewRW" customModuleProvider="target">
-                            <size key="itemSize" width="320" height="480"/>
+                            <size key="itemSize" width="300" height="62"/>
                             <size key="headerReferenceSize" width="50" height="180"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterCell" id="iUb-XQ-IQw" customClass="CharactersCell" customModule="StretchyHeaderCollectionViewRW" customModuleProvider="target">
-                                <rect key="frame" x="27.5" y="180" width="320" height="480"/>
+                                <rect key="frame" x="37.5" y="180" width="300" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="62"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-5H-M8J">
@@ -60,20 +60,20 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqx-sd-gkc">
-                                            <rect key="frame" x="74" y="25" width="234" height="12"/>
+                                            <rect key="frame" x="74" y="25" width="214" height="12"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzQ-gW-8pe">
-                                            <rect key="frame" x="74" y="8" width="234" height="17"/>
+                                            <rect key="frame" x="74" y="8" width="214" height="17"/>
                                             <fontDescription key="fontDescription" type="system" weight="black" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </view>
-                                <color key="backgroundColor" red="0.53009440100000005" green="0.69548177079999995" blue="0.87050238719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="0.93018740700000002" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Gqx-sd-gkc" firstAttribute="leading" secondItem="Mci-5H-M8J" secondAttribute="trailing" constant="12" id="E5j-2k-59o"/>
                                     <constraint firstItem="Mci-5H-M8J" firstAttribute="leading" secondItem="iUb-XQ-IQw" secondAttribute="leading" id="P8O-jB-ZSg"/>
@@ -85,42 +85,42 @@
                                     <constraint firstItem="Mci-5H-M8J" firstAttribute="top" secondItem="iUb-XQ-IQw" secondAttribute="top" id="xK3-KP-CsX"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="characterDescription" destination="Gqx-sd-gkc" id="WFh-nQ-tNp"/>
-                                    <outlet property="characterImage" destination="Mci-5H-M8J" id="iUC-4Q-Gcg"/>
-                                    <outlet property="characterTitle" destination="XzQ-gW-8pe" id="Rzp-E9-pip"/>
+                                    <outlet property="characterDescription" destination="Gqx-sd-gkc" id="yqe-lG-6QB"/>
+                                    <outlet property="characterImage" destination="Mci-5H-M8J" id="hNF-zg-jLF"/>
+                                    <outlet property="characterTitle" destination="XzQ-gW-8pe" id="dUF-F3-eKV"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterHeader" id="8zz-fO-GLw" customClass="CollectionHeaderView" customModule="StretchyHeaderCollectionViewRW" customModuleProvider="target">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CharacterHeader" id="yRF-cH-nFD" customClass="CollectionHeaderView" customModule="StretchyHeaderCollectionViewRW" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="KAX-yU-guv">
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="HeaderBackground" translatesAutoresizingMaskIntoConstraints="NO" id="xdE-oC-eMT">
                                     <rect key="frame" x="-113" y="-210" width="600" height="600"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="KAX-yU-guv" secondAttribute="height" multiplier="1:1" id="aRW-kF-Hu2"/>
-                                        <constraint firstAttribute="height" constant="600" id="rtK-vD-6Br"/>
+                                        <constraint firstAttribute="width" secondItem="xdE-oC-eMT" secondAttribute="height" multiplier="1:1" id="Ffp-AK-pZ0"/>
+                                        <constraint firstAttribute="height" constant="600" id="sg4-jU-AVw"/>
                                     </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="nEj-Lq-PBI">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeaderLogo" translatesAutoresizingMaskIntoConstraints="NO" id="27s-5e-2ba">
                                     <rect key="frame" x="98" y="0.0" width="180" height="180"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="180" id="SvE-3s-wn8"/>
-                                        <constraint firstAttribute="width" secondItem="nEj-Lq-PBI" secondAttribute="height" multiplier="1:1" id="htb-nn-2eC"/>
+                                        <constraint firstAttribute="height" constant="180" id="gC3-Kk-vMR"/>
+                                        <constraint firstAttribute="width" secondItem="27s-5e-2ba" secondAttribute="height" multiplier="1:1" id="vRc-XH-6lW"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="nEj-Lq-PBI" firstAttribute="centerY" secondItem="8zz-fO-GLw" secondAttribute="centerY" id="Qx0-cG-GeG"/>
-                                <constraint firstItem="KAX-yU-guv" firstAttribute="centerX" secondItem="8zz-fO-GLw" secondAttribute="centerX" id="dSD-Ui-IkB"/>
-                                <constraint firstItem="KAX-yU-guv" firstAttribute="centerY" secondItem="8zz-fO-GLw" secondAttribute="centerY" id="dqR-vS-8k0"/>
-                                <constraint firstItem="nEj-Lq-PBI" firstAttribute="centerX" secondItem="8zz-fO-GLw" secondAttribute="centerX" id="kCv-yn-y4u"/>
+                                <constraint firstItem="27s-5e-2ba" firstAttribute="centerY" secondItem="yRF-cH-nFD" secondAttribute="centerY" id="5J8-tk-6QP"/>
+                                <constraint firstItem="xdE-oC-eMT" firstAttribute="centerX" secondItem="yRF-cH-nFD" secondAttribute="centerX" id="GCw-o7-hRw"/>
+                                <constraint firstItem="27s-5e-2ba" firstAttribute="centerX" secondItem="yRF-cH-nFD" secondAttribute="centerX" id="QEn-hn-S3w"/>
+                                <constraint firstItem="xdE-oC-eMT" firstAttribute="centerY" secondItem="yRF-cH-nFD" secondAttribute="centerY" id="cGX-xQ-luF"/>
                             </constraints>
                             <connections>
-                                <outlet property="backgroundImage" destination="KAX-yU-guv" id="QpX-Me-rXZ"/>
-                                <outlet property="backgroundImageHeightConstraint" destination="rtK-vD-6Br" id="D3Q-IS-trT"/>
-                                <outlet property="foregroundImage" destination="nEj-Lq-PBI" id="vqs-yR-pif"/>
-                                <outlet property="foregroundImageHeightConstraint" destination="SvE-3s-wn8" id="idC-2y-LAw"/>
+                                <outlet property="backgroundImage" destination="xdE-oC-eMT" id="03n-Jl-Wdv"/>
+                                <outlet property="backgroundImageHeightConstraint" destination="sg4-jU-AVw" id="VI1-Ex-X35"/>
+                                <outlet property="foregroundImage" destination="27s-5e-2ba" id="w8h-JX-FP5"/>
+                                <outlet property="foregroundImageHeightConstraint" destination="gC3-Kk-vMR" id="Uon-72-5lJ"/>
                             </connections>
                         </collectionReusableView>
                         <connections>
@@ -212,7 +212,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.93018740699404767" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="gTu-R1-SGn" firstAttribute="top" secondItem="mbO-Fx-nRQ" secondAttribute="bottom" constant="8" id="0A9-AS-bKT"/>
                                     <constraint firstAttribute="trailing" secondItem="WhE-6f-7U7" secondAttribute="trailing" id="3RB-ay-Lm1"/>
@@ -235,7 +235,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.53009440100000005" green="0.69548177079999995" blue="0.87050238719999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.67091137170000004" green="0.83144831659999996" blue="0.57968777419999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="39j-uq-aUa" firstAttribute="centerX" secondItem="DZT-Am-Eul" secondAttribute="centerX" id="YsE-BB-Ouu"/>
                             <constraint firstItem="akt-wN-osX" firstAttribute="top" secondItem="myz-XU-5dp" secondAttribute="bottom" constant="24" id="lKH-da-NDn"/>
@@ -259,7 +259,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HeaderBackground" width="1200" height="1200"/>
         <image name="HeaderLogo" width="480" height="480"/>
-        <image name="backgroundImage" width="491" height="307"/>
     </resources>
 </document>
